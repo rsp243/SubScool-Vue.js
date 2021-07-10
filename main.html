@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://unpkg.com/vue@next"></script>      
+    <title>Школа по подписке</title>
+  </head>
+  <body>
+    <div class="name-project">
+      <h1>Школа по подписке</h1>
+    </div>
+    <div id="app">
+      <div class="container">
+        <profile-display></profile-display>
+        <dashboard-display></dashboard-display>
+      </div>
+    </div>
+    <script src="src/js/jquery-3.5.1.min.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/slick.min.js"></script>
+
+    <script src="components/profile.js"></script>
+    <script src="components/dashboard.js"></script>
+
+    <script>
+        const mountedAppProfile = app.mount('#app')
+    </script>
+
+  </body>
+</html>
+<!--{% else %}
+      <script type="text/javascript">
+        document.location.href = '/login'
+      </script>
+{% endif %}
+-->

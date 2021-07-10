@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <script src="https://unpkg.com/vue@next"></script>      
+    <link rel="stylesheet" href="src/css/stylesheet.css">
+</head>
+<body>
+    <div class="name-project" style="display: none">
+        <p>Школа по подписке</p>
+    </div>
+    <div class="middle" style="display: none">
+        <button class="circle">
+            <svg class="triangle" width="40" height="47" viewBox="0 0 40 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40 23.5L0.250002 46.4497L0.250004 0.550326L40 23.5Z" fill="url(#paint0_linear)"/>
+            <defs>
+                <linearGradient id="paint0_linear" x1="50.4896" y1="61.5937" x2="-16.8646" y2="-17.3542" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4D186F"/>
+                    <stop offset="1" stop-color="#B073D5"/>
+                </linearGradient>
+            </defs>
+            </svg>
+        </button>
+    </div>
+    <div class="register" style="display: none">
+
+        <div class="registration-body">
+            <div id="app">
+                <sign-in-display></sign-in-display>
+                <sign-up-display></sign-up-display>
+
+            </div>
+        </div>
+        <div class="social">
+            <p>или</p>
+            <div class="social-icons">
+                <button><img src="img/vk-logo.png" alt=""></button>
+                <button><img src="img/twitter-logo.png" alt=""></button>
+            </div>
+        </div>
+        <div class="registration-btn-mobile">
+            <button class="registration-btn">
+                Регистрация
+                <!--<button class="circle">
+                    <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 24L0.143591 -7.02782e-07L27.8564 1.71995e-06L14 24Z" fill="url(#paint0_linear)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear" x1="-9" y1="30.3333" x2="38.6667" y2="-10.3333" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#4D186F"/>
+                            <stop offset="1" stop-color="#B073D5"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                </button>-->
+            </button>
+        </div>
+    </div>
+    
+    <script src="src/js/jquery-3.5.1.min.js"></script>
+    <script src="src/js/index.js"></script>
+
+    <script src="components/sign-in.js"></script>
+    <script src="components/sign-up.js"></script>
+
+    <script>
+        const mountedAppProfile = app.mount('#app')
+    </script>
+</body>
+</html>

@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800;900&family=Montserrat:wght@500;700&display=swap');
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+h1 {
+  margin-top:4vh;
+  margin-bottom:4vh;
+  font-size:6vh;
+}
+
+.name-project {
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 0;
+    font-size: 2vw;
+    font-weight: 900;
+}
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 175vh;
+    max-width: 85%;
+}
+
+.prof-nav {
+    flex: 0 1 25%;
+}
+
+.courses, .homework, .chat, .video {
+    flex: 0 1 75%;
+    margin: 0 0 0 15px;
+    background: #F9F9F9;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.profile {
+    background-color: #F9F9F9;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    min-height: 60vh;
+}
+
+.text {
+    margin: 12px 0;
+}
+
+.profile .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
+    color: white;
+    font-size: small;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.header p {
+    margin: 5px 10px 5px 10px;
+}
+
+.profile-photo {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(196, 185, 185);
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.block-profileImage-exit {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 0;
+}
+
+.exitFromProfile {
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(109, 105, 105);
+    color:white;
+}
+
+.availible-courses, .chat-topic, .video-topic, .homework-topic{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    background: #181818;
+    color: #FFFFFF;
+    padding: 15px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: row;
+    height:60%
+}
+
+.calendar-name, .today-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    color: #000000;
+}
+
+.today-schedule, .calendar {
+    margin: 20px;
+    margin-bottom: 5px;
+    flex: 0 1 50%;
+}
+
+.menu {
+    background: #B9B9B9;
+    border-radius: 20px;
+    height: 80%;
+    overflow-y: scroll;
+    margin: 0 15px 0 0;
+}
+
+.menu-block {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 8px 5px 5px 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 9px 8px 9px 8px;
+}
+
+.menu-block p {
+    margin: 0 0 0 0;
+    padding: 0 0 0 7px;
+}
+
+.start-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.play-video {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 168, 52);
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.play-video p {
+    margin-top: 0.2em;
+}
+
+.friends-teaсhers-block, .activity-progress {
+    display: flex;
+}
+
+.friends, .teachers, .last-activity, .progress {
+    flex: 0 1 50%;
+}
+
+.friends, .teachers, .last-activity, .progress {
+    font-family: 'Montserrat', sans-serif;
+    margin: 19px 11px 19px 14px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000000;
+    box-shadow: 0px 2px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.friends, .teachers {
+    padding: 6px;
+}
+
+.friends span, .teachers span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.friends p, .teachers p {
+    margin: 0px;
+}
+
+.lessons-blocks, .grey-block {
+    text-align: left;
+    background: #D3D3D3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 0;
+    width: inherit;
+}
+
+.lesson-block::after {
+    content: '';
+    display: block;
+    margin: 0px 3px 5px 3px;
+    height: 2px;
+    background-color: #878787;
+}
+
+.profile-info {
+    display:flex;
+    flex-direction: column;
+}
+
+.all-activities-btn, .all-marks-btn {
+    font-family: 'Montserrat', sans-serif;
+    height: 30px;
+    margin: 26px auto 10px auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.last-activity {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 13px;
+    color: #000000;
+    height: 100%;
+}
+
+.lesson-block {
+    margin: 0 5px 0 5px;
+}
+
+.grey-block {
+    text-align: center;
+    font-size: 16px;
+    line-height: 17px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.green-circle {
+    margin: 10px auto;
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    background: #91DA57;
+    box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.25);
+    display: flex; align-items: center; justify-content: center;
+}
+
+.mark {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 29px;
+    margin: 15px 0;
+    color: #FFFFFF;
+}
+
+.edit-profile {
+    min-width: 220px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #181818;
+    margin: 0 auto 25px auto;
+}
+
+.lessons-blocks {
+    margin: 4px 0 0 0;
+}
+
+.navbar {
+    flex: 0 1 33.333%;
+    margin: 37px 0 0 0;
+    padding: 0 27.5px 0 27.5px;
+    background: #F9F9F9;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    border: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    flex: 0 1 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-btn img, .video-btn img, .chat-btn img, .homework-btn img {
+    width:4vh;
+    padding: 12px;
+    margin: 0 auto;
+    text-align: center;
+    color: #BCBCBC;
+}
+
+a.home-btn, a.video-btn, a.chat-btn, a.homework-btn {
+    color: #BCBCBC;
+    margin: 0;
+    text-decoration: none;
+}
+
+.navbar a p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 11px;
+    margin: 0 0 6px 0;
+    color: #BCBCBC;
+}
+
+.time {
+    margin: 0 10px 0 0;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    min-width: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.slick-list {
+    overflow: hidden;
+    width: 58vw;
+}
+
+.slider-item {
+    font-size: 0;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 20px 10px 20px 10px;
+    min-height: 180px;
+    max-width: 120px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(109, 109, 109);
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: #B9B9B9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(83, 83, 83);
+}
+
+.slide-prev {
+    position: absolute;
+    top: 26%;
+    z-index: 10;
+    left: 31%;
+    border: 0;
+    background-color: transparent;
+}
+
+.slide-next{
+    position: absolute;
+    top: 26%;
+    z-index: 10;
+    right: 12%;
+    border: 0;
+    background-color: transparent;
+}
+
+.slide-prev img, .slide-next img {
+    max-width: 120px;
+}
+
+.chat-item {
+    min-height: 100px;
+    width: 94%;
+    border: 1px solid rgb(109, 109, 109, 0.5);
+    background-color: rgb(109, 105, 105);
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.chat-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-photo {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    border: 1px solid rgb(240, 240, 240);
+    background-color: rgb(240, 240, 240);
+    margin: 0 0 0 10px;
+}
+
+.name-of-pers {
+    display: flex;
+
+}
+
+.name-of-pers p {
+    font-size: large;
+    color: rgb(240, 240, 240);
+    margin: auto 10px;
+}

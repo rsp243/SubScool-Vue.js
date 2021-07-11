@@ -187,12 +187,10 @@ a {
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-
-    color: #3A0365;
     margin: 5px;
 }
 
-@media (max-width: 375px){    
+@media (max-width: 425px){    
     .name-project {
         font-family: 'Montserrat Alternates', sans-serif;
         font-style: normal;
@@ -211,6 +209,18 @@ a {
         color: #4E1695;
 
         justify-content: center;
+    }
+
+    .sign-up-body p{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+    
+        color: #3A0365;
+        margin: 5px;
     }
 
     .sign-in-btn {

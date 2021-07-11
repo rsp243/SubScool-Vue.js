@@ -34,9 +34,9 @@ $(document).ready(function () {
         $('.registration-btn-mobile').fadeIn(1000);
     }
     
-    if (maxwidth > 375){
+    if (maxwidth > 425){
         setTimeout(openReqistrationPanel, 1000);
-    } else if (maxwidth <= 375){
+    } else if (maxwidth <= 425){
         setTimeout(openCircleButton, 1000);
     }
 

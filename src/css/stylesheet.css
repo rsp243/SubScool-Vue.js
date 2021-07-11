@@ -206,6 +206,15 @@ a {
         color: #4E1695;
     }
 
+    .sign-up-btn {
+        display: flex;
+        align-items: center;
+    }
+
+    .sign-up-btn svg {
+        margin-left: 10px;
+    }
+
     .headle .back-btn {
         display: inline;
     }

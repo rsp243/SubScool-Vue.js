@@ -5,6 +5,9 @@ const app = Vue.createApp({
 })
 $(document).ready(function () {
     let maxwidth = $('html').css('width');
+
+    maxwidth = Number(maxwidth.slice(0, maxwidth.indexOf('px')))
+
     $('.name-project').fadeIn(1000);
 
     function openReqistrationPanel() {
@@ -19,9 +22,9 @@ $(document).ready(function () {
         $('.sign-up').fadeIn(1000);
     }
     
-    if (maxwidth != '320px'){
+    if (maxwidth > 375){
         setTimeout(openReqistrationPanel, 1000);
-    } else if (maxwidth == '320px'){
+    } else if (maxwidth <= 375){
         setTimeout(openCircleButton, 1000);
     }
 

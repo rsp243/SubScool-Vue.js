@@ -4,7 +4,7 @@ app.component('sign-up-display', {
     `
     <div class="sign-up">
         <div class="headle">
-            <button class="back-btn" style="display: none">
+            <button class="back-btn">
                 <img src="src/img/back-btn.png">
             </button>
             <h3>Регистрация</h3>

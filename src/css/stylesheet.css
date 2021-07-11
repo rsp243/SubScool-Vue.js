@@ -190,6 +190,11 @@ a {
     margin: 5px;
 }
 
+
+.headle .back-btn {
+    display: none;
+}
+
 @media (max-width: 425px){    
     .name-project {
         font-family: 'Montserrat Alternates', sans-serif;
@@ -199,6 +204,10 @@ a {
         line-height: 39px;
         text-align: center;
         color: #4E1695;
+    }
+
+    .headle .back-btn {
+        display: inline;
     }
 
     .middle {

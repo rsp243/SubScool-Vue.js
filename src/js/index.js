@@ -22,11 +22,32 @@ $(document).ready(function () {
         $('.sign-up').fadeIn(1000);
     }
     
+    function openSocialPanel() {
+        $('.social').fadeIn(1000);
+    }   
+
+    function openSignInPanel() {
+        $('.sign-in').fadeIn(1000);
+    }   
+
+    function openRegistrationMobilePanel() {
+        $('.registration-btn-mobile').fadeIn(1000);
+    }
+    
     if (maxwidth > 375){
         setTimeout(openReqistrationPanel, 1000);
     } else if (maxwidth <= 375){
         setTimeout(openCircleButton, 1000);
     }
+
+    $('.back-btn').on('click', function() {
+        $('.sign-up').fadeOut(1000);
+        setTimeout(openSignInPanel, 1000);
+        setTimeout(openSocialPanel, 1000);
+
+        setTimeout(openRegistrationMobilePanel, 1000);
+
+    })
 
     $('.circle').on('click', function() {
         $('.middle').fadeOut(1000);

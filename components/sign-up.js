@@ -3,7 +3,12 @@ app.component('sign-up-display', {
     /* html */
     `
     <div class="sign-up">
-        <h3>Регистрация</h3>
+        <div class="headle">
+            <button class="back-btn">
+                <img src="src/img/back-btn.png">
+            </button>
+            <h3>Регистрация</h3>
+        </div>
         <div class="error-message" style="display: none">
             <p>Пользователь с таким номероом телефона уже зарегистрирован. Проверьте номер или войдите с помощью соседнего меню</p>
         </div>

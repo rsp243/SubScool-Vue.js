@@ -288,6 +288,23 @@ a {
         align-items: center;
     }
 
+    .headle {
+        display: flex;
+        align-items: center;
+    }
+    
+    .back-btn img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .back-btn {
+        height: 35px;
+        border: 0;
+        margin: 0 44px 0 0;
+        padding: 0;
+    }
+
     .registration-btn svg {
         margin-left: 40px;
     }

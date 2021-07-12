@@ -10,54 +10,43 @@ $(document).ready(function () {
 
     $('.name-project').fadeIn(1000);
 
-    function openReqistrationPanel() {
-        $('.register').fadeIn(1000);
-    }
-
-    function openCircleButton() {
-        $('.middle').fadeIn(1000);
-    }
-
-    function openSignUpPanel() {
-        $('.sign-up').fadeIn(1000);
-    }
-    
-    function openSocialPanel() {
-        $('.social').fadeIn(1000);
-    }   
-
-    function openSignInPanel() {
-        $('.sign-in').fadeIn(1000);
-    }   
-
-    function openRegistrationMobilePanel() {
-        $('.registration-btn-mobile').fadeIn(1000);
+    function openPanel(name) {
+        $('.' + name).fadeIn(1000);
     }
     
     if (maxwidth > 425){
-        setTimeout(openReqistrationPanel, 1000);
+        setTimeout(openPanel, 1000, 'register');
     } else if (maxwidth <= 425){
-        setTimeout(openCircleButton, 1000);
+        setTimeout(openPanel, 1000, 'middle');
     }
 
     $('.back-btn').on('click', function() {
         $('.sign-up').fadeOut(1000);
-        setTimeout(openSignInPanel, 1000);
-        setTimeout(openSocialPanel, 1000);
+        setTimeout(openPanel, 1000, 'sign-in');
+        setTimeout(openPanel, 1000, 'social');
+        setTimeout(openPanel, 1000, 'registration-btn-mobile');
+    })
 
-        setTimeout(openRegistrationMobilePanel, 1000);
+    $('.rules-btn').on('click', function() {
+        $('.rules').fadeOut(1000);
+        setTimeout(openPanel, 1000, 'confirmation-email');
+    })
 
+    $('.confirmation-email-btn').on('click', function() {
+        $('.confirmation-email').fadeOut(1000);
+        setTimeout(openPanel, 1000, 'confirmation-phone');
     })
 
     $('.circle').on('click', function() {
         $('.middle').fadeOut(1000);
-        setTimeout(openReqistrationPanel, 1000);
+        setTimeout(openPanel, 1000, 'register');
     })
+
     $('.registration-btn').on('click', function() {
         $('.sign-in').fadeOut(1000);
         $('.social').fadeOut(1000);
         $('.registration-btn-mobile').fadeOut(1000);
-        setTimeout(openSignUpPanel, 1000);
+        setTimeout(openPanel, 1000, 'sign-up');
     })
 
     $('.sign-in-btn').on('click', function() {
@@ -70,8 +59,10 @@ $(document).ready(function () {
         }
     })  
 
-    $('.sign-up-btn').on('click', function() {
-        let nameValue = document.getElementById('name').value;
+    $('.sign-up-btn').on('click', function() {  
+        $('.sign-up').fadeOut(1000);
+        setTimeout(openPanel, 1000, 'rules')
+        /*let nameValue = document.getElementById('name').value;
         let surnameValue = document.getElementById('surname').value;
         let emailValue = document.getElementById('email').value;
         let telValue = document.getElementById('tel').value;
@@ -80,6 +71,6 @@ $(document).ready(function () {
         } else {
             $('.sign-up .error-message').css('display', 'none');
             window.location.href = "";
-        }
+        }*/
     })
 })

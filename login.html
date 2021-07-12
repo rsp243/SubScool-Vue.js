@@ -26,12 +26,13 @@
         </button>
     </div>
     <div class="register" style="display: none">
-
         <div class="registration-body">
             <div id="app">
                 <sign-in-display></sign-in-display>
                 <sign-up-display></sign-up-display>
-
+                <rules-display></rules-display>
+                <confirmation-email-display></confirmation-email-display>
+                <confirmation-phone-display></confirmation-phone-display>
             </div>
         </div>
         <div class="social">
@@ -62,6 +63,9 @@
 
     <script src="components/sign-in.js"></script>
     <script src="components/sign-up.js"></script>
+    <script src="components/rules.js"></script>
+    <script src="components/confirmation-email.js"></script>
+    <script src="components/confirmation-phone.js"></script>
 
     <script>
         const mountedAppProfile = app.mount('#app')

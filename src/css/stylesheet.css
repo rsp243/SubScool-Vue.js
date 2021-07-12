@@ -35,7 +35,7 @@ body {
     flex: 0 1 50%;
 }
 
-input{
+.sign-up input, .sign-in input{
     width: 288px;
     height: 28px;
     display: block;
@@ -89,7 +89,7 @@ a {
     margin-top: 2px;
 }
 
-.sign-up-btn {
+.sign-up-btn, .rules-btn, .confirmation-email-btn {
     display: block;
     margin: 16px auto;
     width: 210px;
@@ -104,7 +104,7 @@ a {
     box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
 }
 
-.sign-up-btn span {
+.sign-up-btn span{
     display: block;
     float: right;
     margin-right: 10px;
@@ -206,12 +206,98 @@ a {
         color: #4E1695;
     }
 
-    .sign-up-btn {
+    .rules p {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+
+        color: #000000;
+    }
+
+    .rules h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+            
+        color: #3A0365;
+    }
+
+    .documents {
+        display: flex;
+        justify-content: center;
+    }
+
+    .confirmation-email {
+        display: none;
+    }
+
+    .rules-of-service button, .license button{
+        width: 97px;
+        height: 107px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        border: 0;
+    }
+
+    .license, .rules-of-service {
+        flex: 0 1 50%;
+    }
+
+    .rules-of-service p, .license p {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 14px;
+        text-align: center;
+
+        color: #000000;
+
+    }
+    
+    .rules-of-service, .license {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .agree {
+        margin: 48px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .agree input{
+        width: 35px;
+        height: 35px;
+        margin: 0 0 0 13px;
+    }
+
+    .agree label {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+
+        color: #3A0365;
+    }
+
+    .sign-up-btn, .rules-btn, .confirmation-email-btn {
         display: flex;
         align-items: center;
     }
 
-    .sign-up-btn svg {
+    .sign-up-btn svg, .rules-btn svg, .confirmation-email-btn svg{
         margin-left: 10px;
     }
 
@@ -341,7 +427,7 @@ a {
         margin: 12px 0 0 0;
     }
 
-    .sign-up-btn {
+    .sign-up-btn, .rules-btn, .confirmation-email-btn {
         padding: 20px 29px 20px 29px;
         border: 0px;
         font-family: 'Montserrat', sans-serif;
@@ -361,4 +447,113 @@ a {
         justify-content: center;
     }
 
+    .rules {
+        display: none;
+    }
+
+    .info-block p {  
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+
+        color: #000000;
+    }
+
+    .info-block span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 22px;
+        text-align: center;
+
+        color: #3A0365;
+    }
+
+    .code {
+        margin: 90px 0 0 0;
+    }
+
+    .insert-code input {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        border: 0;
+        padding: 12px 33px 12px 33px;
+        width: 254px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        
+        color: #D0D0D0;
+        
+    }
+
+    .insert-code {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .insert-code button, .resend-phone-code {
+        margin: 20px 0 0 0;
+        background: rgba(47, 20, 69, 0.3);
+        border-radius: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 0px;
+        text-align: center;
+
+        color: #FFFFFF;
+        width: 232px;
+        height: 34px;
+    }
+    
+    .resend-phone-code p {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 0px;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    .confirmation-phone {
+        display: none;
+    }
+
+    .confirmation-phone .info-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .change-email, .change-number {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+
+        color: #FFFFFF;
+        background: #C09FCF;
+        box-shadow: 0px 4px 10px 1px rgba(192, 159, 207, 0.6);
+        border-radius: 20px;
+        border: 0;
+        padding: 7px 10px 7px 10px;
+    }
+
+    .info-block {
+        margin: 42px 0 0 0;
+    }
 }

@@ -6,7 +6,7 @@ app.component('confirmation-phone-display', {
         <h3>Подтверждение номера телефона</h3>
         <div class="code">
             <div class="insert-code">
-                <input placeholder="Введите код">
+                <input placeholder="Введите код" id="phone-code-check">
             </div>
             <div class="info-block">
                 <p>Чтобы продолжить, вам необходимо подтвердить свою номер. Для этого введите код, который мы отправили в SMS на <span>+7(900)934-00-26</span></p>
